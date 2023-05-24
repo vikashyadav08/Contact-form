@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{ 
+    background: rgb(164, 223, 233);
+}
+.submit-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    max-width: 450px;
+    background: rgb(32, 154, 182);
+    padding: 20px 50px;
+    margin: 20px;
+    box-shadow: opx 5px -10px -5px rgba(22, 20, 20, 0.1);
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: monospace;
+    
+
+}
+
+
+.form-input input{
+    margin-top: 10px;
+height: 1.6rem;
+font-size: 1rem;
+}
+.submit-form .title h1{
+   margin-left: 70px;
+}
+.captcha label{
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+.captcha-form input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 1.6rem;
+    font-size: 1.2rem;
+}
+#submit{
+    font-size: 1.4rem;
+    border-radius: 7px;
+    padding: 5px;
+    width: 100px;
+    background-color: rgb(31, 133, 144);
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+    #submit:hover{
+        background-color: aqua;
+        transform: scale(1.1);
+        
+    }
+    
+    .wrapper .captcha-area{
+        display: flex;
+        flex-direction: row;
+        height: 65px;
+        margin: 30px 0 20px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .captcha-area .captcha-img img{
+        height: 60px;
+        width: 300px;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+    .captcha-area .reload-btn i{
+   transition: all 0.3s ease;
+    }
+    .captcha-area .reload-btn:hover i{
+        transform: rotate(15deg);
+    }
+    .captcha-img .captcha{
+        position: absolute;
+        left: 32%;
+        top: 63%;
+        font-size: 2rem;
+    }
+    .reload-btn{
+        height: 60px;
+        padding: 10px;
+        font-size: 1.6rem;
+        margin-left: 10px;
+        cursor: pointer;
+        background-color: rgb(31, 133, 144);
+    }
+    .reload-btn:hover{
+        background-color: aqua;
+    }
+    .input-area input{
+        width: 300px;
+        height: 2.6rem;
+        font-size: 1rem;
+
+    }
+    button .check-btn{
+        height: 1.6rem;
+        font-size: 1.8rem;
+    }
+.status-txt{
+    margin: 20px 0 -5px 0;
+    color: black;
+    display: none;
+    font-size: 18px;
+}
+.input-area .check-btn{
+    position: absolute;
+    right: 7px;
+    top: 80%;
+    font-size: 17px;
+    height: 45px;
+    padding: 0 20px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+.input-area input:valid + .check-btn{
+    opacity: 1;
+    pointer-events: auto;
+}
+.status-txt{
+    color: black;
+}
